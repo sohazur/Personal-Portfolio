@@ -158,31 +158,39 @@ header section p {
   height: calc(90vh - 68px);
 }
 
-#contact h1 {
+#contact div {
+  display: block;
+  max-width: 790px;
+  margin: auto;
+}
+
+#contact div h1 {
   font-size: 4.25rem;
 }
 
-#contact p {
+#contact div p {
   font-style: italic;
   font-size: 1.125rem;
   font-weight: 200;
+  margin-bottom: 30px;
 }
 
-#contact ul {
+#contact div ul {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-#contact a {
+#contact div a {
   font-size: 1.5rem;
   padding: 15px;
   text-decoration: none;
   color: white;
 }
 
-#contact a:hover {
+#contact div a:hover {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
