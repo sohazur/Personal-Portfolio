@@ -4,76 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+    rel="stylesheet"
+    />
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Sohazur's Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#welcome-section">About</a></li>
-                <li><a href="#middle">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<!-- START NAV -->
 
-        <section id="welcome-section">
-            <div>
-                <h1>Hey I am Sohazur</h1>
-                <p>a web developer</p>
-            </div>
-        </section>
-    </header>
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#welcome-section">About</a>
+    </li>
+    <li>
+      <a href="#projects">Work</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
 
+<!-- END NAV -->
 
-    <section id="middle">
-        <div>
-            <h2>These are some of my projects</h2>
-            <hr>
-        </div>
-        <section id="projects">
-            <div class="project-tile">
-                <a href="https://codepen.io/Sozib/full/mdRJVGb" target="_blank"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page" class="project-img"></a>
-                <div class="project-title"><a href="https://codepen.io/Sozib/full/mdRJVGb" target="_blank">Tribute Page</a></div>
-            </div>
-            <div class="project-tile">
-                <a href="https://codepen.io/Sozib/full/eYgJPRG" target="_blank"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="Survey form" class="project-img"></a>
-                <div class="project-title"><a href="https://codepen.io/Sozib/full/eYgJPRG" target="_blank">Survey Form</a></div>
-            </div>
-            <div class="project-tile">
-                <a href="https://codepen.io/Sozib/full/ZELOBmy" target="_blank"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="Product Landing page" class="project-img"></a>
-                <div class="project-title"><a href="https://codepen.io/Sozib/full/ZELOBmy" target="_blank">Product Landing Page</a></div>
-            </div>
-            <div class="project-tile">
-                <a href="https://codepen.io/Sozib/full/qBRaOGz" target="_blank"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="JS documentation page" class="project-img"></a>
-                <div class="project-title"><a href="https://codepen.io/Sozib/full/qBRaOGz" target="_blank">Technical Documentation Page</a></div>
-            </div>
-        </section>
-    
-        <button><a href="https://codepen.io/Sozib">Show all ></a></button>
-    </section>
+<!-- START WELCOME SECTION -->
 
-    <section id="contact">
-        <div>
-            <h1>Let's work together...</h1>
-            <p>How do you take your coffee?</p>
+<section id="welcome-section" class="welcome-section">
+  <h1>Hey I am Sohazur</h1>
+  <p>a web developer</p>
+</section>
 
-            <ul>
-                <li><a href="https://www.linkedin.com/in/sohazur/" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/sohazur" id="profile-link" target="_blank"><i class="fa fa-github"></i> Github</a></li>
-                <li><a href="https://www.facebook.com/sohazur6539/" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                <li><a href="mailto:mdsohazurislamsozib@gmail.com" target="_blank"><i class="fa fa-at"></i> Send a mail</a></li>
-                <li><a href="tel:+8801797435460" target="_blank"><i class="fa fa-mobile"></i> Call me</a></li>
-            </ul>
-        </div>
-    </section>
+<!-- END WELCOME SECTION -->
 
-    <footer>
-        <div>
-            <hr>
-            <p>&copy Created by Sohazur</p>
-        </div>
-    </footer>
+<!-- START PROJECTS SECTION -->
+
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">These are some of my projects</h2>
+
+  <div class="projects-grid">
+    <a
+      href="https://codepen.io/Sozib/full/mdRJVGb"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Tribute Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/Sozib/full/eYgJPRG"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Survey Form
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+
+    <a
+      href="https://codepen.io/Sozib/full/ZELOBmy"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Product Landing Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/Sozib/full/qBRaOGz"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Technical Documentation Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+  </div>
+
+  <a
+    href="https://codepen.io/FreeCodeCamp/"
+    class="btn btn-show-all"
+    target="_blank"
+    >Show all<i class="fas fa-chevron-right"></i
+  ></a>
+</section>
+
+<!-- END PROJECTS SECTION -->
+
+<!-- START CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Let's work together...</h2>
+    <p>How do you take your coffee?</p>
+  </div>
+  <div class="contact-links">
+    <a
+      href="https://www.facebook.com/sohazur6539/"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-facebook-square"></i> Facebook</a
+    >
+    <a
+      id="profile-link"
+      href="https://github.com/sohazur/"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a
+      href="https://www.linkedin.com/in/sohazur/"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-linkedin"></i> LinkedIn</a
+    >
+    <a href="mailto:mdsohazurislamsozib.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Send a mail</a
+    >
+    <a href="tel:+8801797435460" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Call me</a
+    >
+  </div>
+</section>
+
+<!-- END CONTACT SECTION -->
+
+<!-- START FOOTER SECTION -->
+
+<footer>
+  <p>
+    &copy; Created By Sohazur
+  </p>
+</footer>
+
+<!-- END FOOTER SECTION -->
+</body>
 </html>
